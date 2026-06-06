@@ -204,3 +204,28 @@
 //for((key, value) in map){
 //    println("$key = $value")
 //}
+
+//    val results = mutableListOf<Int>()
+//    val numbers = listOf(1, 2, 3)
+//    for (number in numbers) {
+//        val result = number * number
+//        results.add(result)
+//    }
+//    println(results)
+//println("Enter a string")
+//val input = readln()
+////Reversing String
+//val finalString = buildString {
+//    for (i in input.lastIndex downTo  0) {
+//        append(input[i])
+//    }
+//}
+//println(finalString)
+//
+//Mostly in Java interop — Java doesn't have default parameters so Kotlin code that needs to be callable from Java uses @JvmOverloads:
+//kotlin@JvmOverloads
+//fun processPayment(
+//    amount: Int,
+//    currency: String = "USD",
+//    userId: String = "guest"
+//) { }
