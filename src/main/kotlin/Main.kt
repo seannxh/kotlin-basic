@@ -1,28 +1,40 @@
 fun main() {
-    println("How many numbers?")
-    val userNumber = readln().toIntOrNull() ?: run {
-        println("Invalid input")
-        return
-    }
-
-    val numbersList = mutableListOf<Int>()
-    var i = 0
-    while (i < userNumber) {
-        println("Please Enter a number ${i + 1}")
-        val number = readln().toIntOrNull()
-        if (number != null) {
-            numbersList.add(number)
-            i++
-        }
-        println("Numbers: $numbersList")
-    }
-//    repeat(userNumber) { index ->
-//        println("Enter number ${index + 1}:")
-//        val number = readln().toIntOrNull()
-//        if (number != null) {
-//            numbersList.add(number)
-//        }
+//    println("How many numbers?")
+//    val userNumber = readln().toIntOrNull() ?: run {
+//        println("Invalid input")
+//        return
 //    }
 //
-//    println("Numbers: $numbersList")
+//    for (i in 1..5) {
+//        println("Numbers $i")
+//    }
+//
+//    val list = mutableListOf<Int>()
+//
+//    for (i in 1..5){list.add(i)}
+//
+//    list.forEach {println(it * 2)}
+//
+//    repeat(3) { index ->
+//        list.add(index * 3)
+//    }
+//    println(list.joinToString(" | "))
+
+
+    do {
+        println("Enter a Number: ")
+        val input = readln().toIntOrNull()
+        println("Your number is $input")
+    } while (input == null)
+
+    val list = listOf("Sean", "John", "Mike")
+    list.forEachIndexed { index, name ->
+        println("$index: $name")
+    }
+
+    val map = mapOf("name" to "Sean", "City" to "Houston", "Job" to "Affirm")
+    for((key, value) in map){
+        println("$key = $value")
+    }
+
 }

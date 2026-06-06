@@ -144,3 +144,25 @@
 ////    mapOf — config, lookup tables, API response parsing
 ////    mutableMapOf — building up key-value data on the fly
 ////    setOf — when uniqueness matters (deduplication)
+
+
+//val numbersList = mutableListOf<Int>()
+//var i = 0
+//while (i < userNumber) {
+//    println("Please Enter a number ${i + 1}")
+//    val number = readln().toIntOrNull()
+//    if (number != null) {
+//        numbersList.add(number)
+//        i++
+//    }
+//    println("Numbers: $numbersList")
+
+    //    repeat(userNumber) { index ->
+//        println("Enter number ${index + 1}:")
+//        val number = readln().toIntOrNull()
+//        if (number != null) {
+//            numbersList.add(number)
+//        }
+//    }
+//
+//    println("Numbers: $numbersList")
