@@ -6,20 +6,48 @@ fun main() {
     val input = readln()
     val inputAsInteger = input.toIntOrNull()
 
-   if (inputAsInteger != null) {
-      val output = if (inputAsInteger.rem(2) == 0){
-          "Your Number is Even."
-      }else if (inputAsInteger > 10){
-          "Your number is Odd, and over 10"
-      }else {
-          "Your number is Odd, and less than 10"
-      }
-       println(output)
-   }else{
-       println("Please Type in a number.")
-   }
+//    if (inputAsInteger != null) {
+//        val output = when {
+//            inputAsInteger.rem(2) == 0 -> "The number is even"
+//            inputAsInteger < 10 -> "The number is odd and less than 10"
+//            else -> "The number is odd and greater than 10"
+//        }
+//        println(output)
+//    }
 
+//    if (inputAsInteger != null) {
+    val output = when (inputAsInteger) {
+        null -> "Enter a valid number please."
+        3 -> "Number is 3"
+        5 -> "Number is 5"
+        in 10..20 -> "Number is between 10 and 20"
+        else -> "The number is odd and at least 11"
+    }
+//        }
+//        println(output)
+//    } else {
+//        println("Please Enter a Number.")
+//    }
+    println(output)
 }
+//    println("Please Enter a Number: ")
+//    val input = readln()
+//    val inputAsInteger = input.toIntOrNull()
+//
+//   if (inputAsInteger != null) {
+//      val output = if (inputAsInteger.rem(2) == 0){
+//          "Your Number is Even."
+//      }else if (inputAsInteger > 10){
+//          "Your number is Odd, and over 10"
+//      }else {
+//          "Your number is Odd, and less than 10"
+//      }
+//       println(output)
+//   }else{
+//       println("Please Type in a number.")
+//   }
+
+
 
 //    val is for no change like const and var is for change like let
 //    var x: Int = 5
