@@ -37,4 +37,14 @@ fun main() {
 //    println(z)
 //    println(a)
 //    println(b)
+
+
+
+    println("Please Enter a Number")
+    //val input = readln().toInt()
+    //val input = readln().toIntOrNull() ?: 0 // it takes the 0 if the input is null and not a Int
+    val input = readln().toIntOrNull()
+
+    val isEven = input?.rem(2)?.equals(0) //rem is remainder
+    println("is your number even? $isEven " + "your number was $input")
 }
